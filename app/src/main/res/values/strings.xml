@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyRecyclerView</string>
+    <string name="id_user">ID User</string>
+    <string name="name">Name</string>
+    <string name="username_user">Username User</string>
+    <string name="email_user">Email User</string>
+</resources>
