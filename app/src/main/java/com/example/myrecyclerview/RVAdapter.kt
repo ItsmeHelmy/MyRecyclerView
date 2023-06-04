@@ -15,6 +15,7 @@ class RVAdapter(
 ): RecyclerView.Adapter<RVAdapter.MyViewHolder>() {
 
     class MyViewHolder(val view: View): RecyclerView.ViewHolder(view){
+        val tvId = view.findViewById<TextView>(R.id.tv_id)
         val tvName = view.findViewById<TextView>(R.id.tv_name)
         val tvUsername = view.findViewById<TextView>(R.id.tv_username)
         val tvEmail = view.findViewById<TextView>(R.id.tv_email)
@@ -28,6 +29,7 @@ class RVAdapter(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.tvId.text = dataList.get(position).id.toString()
         holder.tvName.text = dataList.get(position).name
         holder.tvUsername.text = dataList.get(position).username
         holder.tvEmail.text = dataList.get(position).email
